@@ -87,7 +87,7 @@ def account():
     return render_template('account.html', title='account', image_url=image_file, form=form)
 
 
-@app.route("/poast/new", methods=['GET', 'POST'])
+@app.route("/post/new", methods=['GET', 'POST'])
 @login_required
 def new_post():
     form = PostForm()
